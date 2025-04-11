@@ -38,6 +38,9 @@ body {
     grid-column: 2/3;
     grid-row:5/6;
     text-align: center ;
+    color:black;
+    text-decoration: underline;
+    font-weight: 700 ;
   }
   
   /* 각 블로그 카드 스타일 */
@@ -78,6 +81,8 @@ body {
     font-size: 0.9 5em;
     color: #333;
     margin-top: 0.}
+  
+  
   
   
   
