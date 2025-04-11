@@ -1,8 +1,7 @@
-/* 전체 폰트와 레이아웃 설정 */
+
 body {
     font-family: 
     margin: 0;
-    /* padding: 2em; */
     background-color: #f9f9f9;
     font-size: 1em; /* 기본 폰트 크기 (16px 기준) */
   }
@@ -12,7 +11,7 @@ body {
     margin: auto;
   }
   
-  /* 블로그 카드들을 그리드 형태로 정렬 */
+  /* 블로그 카드 그리드 */
   .blog-grid {
     display: grid;
     grid-template-columns: 0.5fr 5fr 0.5fr;
