@@ -1,6 +1,7 @@
 
 body {
-    font-family:;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
     margin: 0;
     font-size: 1em; /* 기본 폰트 크기 (16px 기준) */
   }
@@ -78,9 +79,79 @@ body {
   .blog-card .description {
     font-size: 0.9 5em;
     color: #333;
-    margin-top: 0.}
+    margin-top: 0;
+  }
   
+    .top-3-1 {
+      object-fit: cover;
+      height: 1.44em;
+    }
+    .top-3-2 {
+      margin: 0;
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1em solid white;
+    }
+    
+    .top-3 {
+      display: flex;
+    }
+    
   
+    
+    .top-2 {
+      background-image: url(images/article-image-hero.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* 원하는 높이 */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* 텍스트를 아래로 정렬 */
+      padding: 40px 20px;
+    }
+    
+    .top-2 p:first-of-type {
+      margin-bottom: 8px; /* 날짜와 제목 사이 */
+    }
+    
+    .top-2 h1 {
+      margin-bottom: 10px; /* 제목과 본문 사이 */
+    }
+    
+    .top-2 p:last-of-type {
+      margin-bottom: 0; /* 맨 마지막은 마진 없애기 */
+    }
+    
+    .top {
+      display: flex;
+    }
+    
+    
+    footer {
+      text-align: center;
+      background-color: #202020;
+      color: #fff;
+      border: 2.17em solid #202020;
+
+    }
+    
+    .footer-1 {
+      margin: 0;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #090909;
+    }
+    
+    .open-btn {
+      margin: 0;
+    }
   
   
   
