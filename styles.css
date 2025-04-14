@@ -152,6 +152,63 @@ body {
     .open-btn {
       margin: 0;
     }
+
+    .menu-box {
+      display: flex;
+      flex-direction: column;
+      /* background: black; */
+      color: black;
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      position: fixed; /*레이아웃 무시하고 화면기준*/
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+    
+    .open-btn,
+    .close-btn {
+      cursor: pointer;
+    }
+    
+    .move {
+      transform: translateX(0);
+      transition: 250ms ease;
+    } 
+    a{
+      color:white;
+    }
+    @media (min-width: 500px) {
+      
+      .close-btn {
+        display: none;
+      }
+      .menu {
+        position: initial;
+        transform: translateX(0);
+      }
+    
+      li {
+        margin: 0 10px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    
+        visibility: visible;
+      }
+    
+      nav li {
+        margin-left: 2em;
+      }
+    }
   
   
   
