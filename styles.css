@@ -1,4 +1,7 @@
 
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
@@ -144,70 +147,89 @@ body {
       margin: 0;
     }
     
-    a {
-      text-decoration: none;
-      color: #090909;
-    }
+ 
+ 
+  a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+  .menu-box {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    transform: translateX(100%);
+    /* position: fixed; 레이아웃 무시하고 화면기준 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     
-    .open-btn {
-      margin: 0;
-    }
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
-    .menu-box {
-      display: flex;
-      flex-direction: column;
-      /* background: black; */
-      color: black;
-    }
-    
-    .menu {
-      display: flex;
-      flex-direction: column;
-      transform: translateX(100%);
-      position: fixed; /*레이아웃 무시하고 화면기준*/
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-    }
-    
-    .open-btn,
-    .close-btn {
-      cursor: pointer;
-    }
-    
-    .move {
-      transform: translateX(0);
-      transition: 250ms ease;
-    } 
-    a{
-      color:white;
-    }
+  }
+
+ul{
+  list-style: none;
+}
+  
+  .open-btn,
+  .close-btn {
+    cursor: pointer;
+    color:black;
+    display: block;
+  }
+  
+  .move {
+    transform: translateX(0);
+    transition: 250ms ease;
+  }
+ 
+  
+  
+
     @media (min-width: 500px) {
       
+     ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        /* visibility: visible; */
+      }
+     
+    
+      nav li {
+        margin-left: 2em;
+      }
+    
+      .top {
+        display: flex;
+        justify-content: left;
+      }
+      .open-btn {
+        display: none;
+      }
       .close-btn {
         display: none;
       }
       .menu {
         position: initial;
         transform: translateX(0);
+   
       }
     
       li {
         margin: 0 10px;
+       
       }
-      nav ul {
-        list-style: none;
-        padding: 0;
+      a{
         display: flex;
-    
-        visibility: visible;
+      
       }
     
-      nav li {
-        margin-left: 2em;
-      }
     }
   
   
