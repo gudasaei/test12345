@@ -1,9 +1,11 @@
-
-body {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
     margin: 0;
-    font-size: 1em; 
+    font-size: 1em;
   }
   
   main {
@@ -19,27 +21,25 @@ body {
     gap: 2em;
   }
   
-  .blog-card-a{
-        grid-column: 2/3;
-        grid-row:2/3;
-  }
-  .blog-card-b{
-  
-        grid-column: 2/3;
-        grid-row:3/4;
-  }
-  .blog-card-c{
-  
-       grid-column: 2/3;
-        grid-row:4/5;
-  }
-  .view-more{
+  .blog-card-a {
     grid-column: 2/3;
-    grid-row:5/6;
-    text-align: center ;
-    color:black;
+    grid-row: 2/3;
+  }
+  .blog-card-b {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .blog-card-c {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .view-more {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    color: black;
     text-decoration: underline;
-    font-weight: 700 ;
+    font-weight: 700;
   }
   
   /* 각 블로그 카드 스타일 */
@@ -58,7 +58,6 @@ body {
     width: 100%;
     height: auto;
     border-radius: 0.375em; /* 6px */
-   ;
   }
   
   /* 날짜 텍스트 스타일 */
@@ -82,135 +81,139 @@ body {
     margin-top: 0;
   }
   
-    .top-3-1 {
-      object-fit: cover;
-      height: 1.44em;
-    }
-    .top-3-2 {
-      margin: 0;
-    }
-    .top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1em solid white;
-    }
-    
-    .top-3 {
-      display: flex;
-    }
-    
+  .top-3-1 {
+    object-fit: cover;
+    height: 1.44em;
+  }
+  .top-3-2 {
+    margin: 0;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1em solid white;
+  }
   
+  .top-3 {
+    display: flex;
+  }
+  
+  .top-2 {
+    background-image: url(images/article-image-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* 원하는 높이 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 텍스트를 아래로 정렬 */
+    padding: 40px 20px;
+  }
+  
+  .top-2 p:first-of-type {
+    margin-bottom: 8px; /* 날짜와 제목 사이 */
+  }
+  
+  .top-2 h1 {
+    margin-bottom: 10px; /* 제목과 본문 사이 */
+  }
+  
+  .top-2 p:last-of-type {
+    margin-bottom: 0; /* 맨 마지막은 마진 없애기 */
+  }
+  
+  .top {
+    display: flex;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #202020;
+    color: #fff;
+    border: 2.17em solid #202020;
+  }
+  
+  .footer-1 {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    list-style: none;
+    color:white;
     
-    .top-2 {
-      background-image: url(images/article-image-hero.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 400px; /* 원하는 높이 */
-      color: white;
+  }
+  .view-more >a{
+    color:black;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .open-btn,
+  .close-btn {
+    cursor: pointer;
+    color: black;
+    display: block;
+  }
+
+  
+  .menu-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 56, 56, 0.8);
+    backdrop-filter: blur(20px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+   
+  }
+  
+
+  
+  .move {
+    transform: translateX(0);
+    transition: 250ms ease;
+  }
+  
+
+  @media (min-width: 500px) {
+    ul {
+      list-style: none;
+      padding: 0;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end; /* 텍스트를 아래로 정렬 */
-      padding: 40px 20px;
+      /* visibility: visible; */
     }
-    
-    .top-2 p:first-of-type {
-      margin-bottom: 8px; /* 날짜와 제목 사이 */
+  
+    nav li {
+      margin-left: 2em;
     }
-    
-    .top-2 h1 {
-      margin-bottom: 10px; /* 제목과 본문 사이 */
-    }
-    
-    .top-2 p:last-of-type {
-      margin-bottom: 0; /* 맨 마지막은 마진 없애기 */
-    }
-    
+  
     .top {
       display: flex;
+      justify-content: left;
     }
-    
-    
-    footer {
-      text-align: center;
-      background-color: #202020;
-      color: #fff;
-      border: 2.17em solid #202020;
-
-    }
-    
-    .footer-1 {
-      margin: 0;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #090909;
-    }
-    
     .open-btn {
-      margin: 0;
+      display: none;
     }
-
-    .menu-box {
-      display: flex;
-      flex-direction: column;
-      /* background: black; */
-      color: black;
-    }
-    
-    .menu {
-      display: flex;
-      flex-direction: column;
-      transform: translateX(100%);
-      position: fixed; /*레이아웃 무시하고 화면기준*/
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:rgba(0,0,0,0.5);
-      backdrop-filter:blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-    
-    .open-btn,
     .close-btn {
-      cursor: pointer;
+      display: none;
     }
-    
-    .move {
+    .menu {
+      position: initial;
       transform: translateX(0);
-      transition: 250ms ease;
-    } 
-    a{
-      color:white;
-    }
-    @media (min-width: 500px) {
-      
-      .close-btn {
-        display: none;
-      }
-      .menu {
-        position: initial;
-        transform: translateX(0);
-      }
-    
-      li {
-        margin: 0 10px;
-      }
-      nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-    
-        visibility: visible;
-      }
-    
-      nav li {
-        margin-left: 2em;
-      }
     }
   
-  
-  
+    li {
+      margin: 0 10px;
+    }
+    a {
+      display: flex;
+    }
+  }
