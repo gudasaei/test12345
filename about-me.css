@@ -246,4 +246,22 @@ body {
         a {
           display: flex;
         }
+        .menu-box ul {
+          position: initial;
+          transform: translateX(0);
+          display: flex;
+          flex-direction: row;
+         
+        }
+        .menu-box {
+            position: static;
+            transform: none;
+            background: none;
+            width: auto;
+            height: auto;
+          }
+        .menu-box ul a {
+            color: black !important;
+            padding: 0 20px;
+          }
       }
