@@ -183,7 +183,7 @@
   }
   
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     ul {
       list-style: none;
       padding: 0;
