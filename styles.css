@@ -169,7 +169,9 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background: black;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
     
     .open-btn,
