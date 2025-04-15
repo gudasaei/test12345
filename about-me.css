@@ -144,9 +144,79 @@ body {
       
       a {
         text-decoration: none;
-        color: #090909;
+        list-style: none;
+        color:white;
+        
+      }
+      .view-more >a{
+        color:black;
       }
       
-      .open-btn {
-        margin: 0;
+      ul {
+        list-style: none;
+      }
+      
+      .open-btn,
+      .close-btn {
+        cursor: pointer;
+        color: black;
+        display: block;
+      }
+    
+      
+      .menu-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(56, 56, 56, 0.8);
+        backdrop-filter: blur(20px);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+       
+      }
+      
+    
+      
+      .move {
+        transform: translateX(0);
+        transition: 250ms ease;
+      }
+      
+    
+      @media (min-width: 700px) {
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          /* visibility: visible; */
+        }
+      
+        nav li {
+          margin-left: 2em;
+        }
+      
+        .top {
+          display: flex;
+          justify-content: left;
+        }
+        .open-btn {
+          display: none;
+        }
+        .close-btn {
+          display: none;
+        }
+        .menu {
+          position: initial;
+          transform: translateX(0);
+        }
+      
+        li {
+          margin: 0 10px;
+        }
+        a {
+          display: flex;
+        }
       }
